@@ -1,0 +1,96 @@
+/* styles.css */
+:root {
+--grass: #4caf50;
+--road: #2f2f2f;
+--lane: #ffffff;
+--yellow: #f5c400;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+body {
+margin: 0;
+background: #111;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.app {
+width: 600px;
+height: 600px;
+}
+
+
+#town-board {
+width: 100%;
+height: 100%;
+}
+
+
+#grass {
+fill: var(--grass);
+}
+
+
+.road {
+fill: var(--road);
+}
+
+
+.roundabout-outer {
+fill: var(--road);
+}
+
+
+.roundabout-outer {
+fill: var(--road);
+}
+
+
+.roundabout-middle {
+fill: none;
+stroke: var(--lane);
+stroke-width: 6;
+stroke-dasharray: 24 24;
+}
+
+
+
+.roundabout-inner {
+fill: var(--grass);
+}
+
+
+.lane-divider {
+stroke: var(--lane);
+stroke-width: 6;
+stroke-dasharray: 24 24;
+}
+
+
+.lane-divider.yellow {
+stroke: var(--yellow);
+}
+
+.roundabout-outer {
+  fill: var(--road);
+}
+
+.roundabout-lane {
+  fill: var(--road);
+  stroke: var(--lane);
+  stroke-width: 6;
+  stroke-dasharray: 22 22;
+}
+
+.roundabout-inner {
+  fill: var(--grass);
+}
+
